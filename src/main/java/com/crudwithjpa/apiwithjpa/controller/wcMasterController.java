@@ -23,7 +23,6 @@ public class wcMasterController {
     // get all the Users.
     @GetMapping("/wcMasters")
     public List<wcMaster> getUsers() {
-        System.out.println("Hello World");
         try {
             return this.wcMasterRepository.findAll();
         } catch (Exception ex) {
